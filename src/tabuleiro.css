@@ -1,0 +1,90 @@
+.tabuleiro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tabuleiro {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.status {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.quadrado {
+  width: 60px;
+  height: 60px;
+  background-color: #ddd;
+  border: 1px solid black;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CSS para os riscos de vitória */
+.linha-vitoria {
+  position: absolute;
+  height: 5px;
+  background-color: red;
+  z-index: 1;
+}
+
+.linha-012 {
+  top: 30px; /* Linha horizontal na primeira linha */
+  left: 0;
+  right: 0;
+}
+
+.linha-345 {
+  top: 90px; /* Linha horizontal na segunda linha */
+  left: 0;
+  right: 0;
+}
+
+.linha-678 {
+  top: 150px; /* Linha horizontal na terceira linha */
+  left: 0;
+  right: 0;
+}
+
+.linha-036 {
+  left: 30px; /* Linha vertical na primeira coluna */
+  top: 0;
+  bottom: 0;
+  width: 5px;
+}
+
+.linha-147 {
+  left: 90px; /* Linha vertical na segunda coluna */
+  top: 0;
+  bottom: 0;
+  width: 5px;
+}
+
+.linha-258 {
+  left: 150px; /* Linha vertical na terceira coluna */
+  top: 0;
+  bottom: 0;
+  width: 5px;
+}
+
+.linha-048 {
+  top: 0; /* Diagonal da esquerda para a direita */
+  left: 0;
+  width: 210px;
+  transform: rotate(45deg);
+}
+
+.linha-246 {
+  top: 0; /* Diagonal da direita para a esquerda */
+  left: 0;
+  width: 210px;
+  transform: rotate(-45deg);
+}
